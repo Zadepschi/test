@@ -1,38 +1,130 @@
-.App {
-  text-align: center;
+body {
+  background-color: #f3f6fc;
+}
+.container1 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 30px;
+    margin: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 15px;
+  background-color: rgb(226, 227, 228, 0.4);
+  width: 98%;
+  position: absolute;
+ 
+}
+.link {
+  text-transform: uppercase;
+  padding: 8px 50px;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bolder;
 }
 
-.App-link {
-  color: #61dafb;
+.slidePicture {
+  width: 100%;
+  
 }
+.main .center {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 15;
+  }
+  .main .center h1 {
+    color: black;
+    font-size: calc(16px + 1.2vw);
+    font-weight: 700;
+    margin-bottom: 30px;
+    position: relative;
+    animation: showLeft 2s;
+    z-index: 1;
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 5px 5px 10px white;
+    }
+    
+    @keyframes showLeft {
+    from {left:-100%;}
+    to {left:0;}
+    }
+    
+   
+    
+    .buttons .buttonContainer {
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      top: 40%;
+      width: 100%;
+    }
+    .buttons .buttonContainer .prevButton {
+      margin-left: 5%;
+      position: relative;
+      animation: showLeft 1s;
+      z-index: 1;
+    }
+    @keyframes showLeft {
+      from {left:-100%;}
+      to {left:0;}
+      }
+      .buttons .buttonContainer .nextButton {
+        margin-right: 5%;
+        position: relative;
+        animation: showRight 1s;
+        z-index: 1;
+      }
+      @keyframes showRight {
+        from {right:-100%;}
+        to {right:0;}
+        }
+      .prevButton  {
+        background: transparent;
+        border: none;
+        box-shadow: 2px 2px 4px;
+      }
+      .nextButton {
+        background: transparent;
+        border: none;
+        box-shadow: 2px 2px 4px;
+      }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+      .clothesName {
+        font-family: 'Open Sans', sans-serif;
+        padding: 10px;
+      }
+      .clothesPrice {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 20px;
+        padding: 10px;
+        margin: 5px;
+       
+      }
+.catalog {
+  margin-top: 20px;
+}
+.cont {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  
+}
+.change {
+  padding: 10px;
+  margin: 10px;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
 }

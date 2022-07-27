@@ -1,0 +1,49 @@
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .App {
+    text-align: center;
+    height: 6vh;
+    background-color: #f3f6fc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .clock {
+    position: relative;
+    margin: a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0d0d0e;
+    text-shadow: 1px 1px 1px;
+  }
+  .line {
+    display: flex;
+  }
+  .sale {
+    align-self: center;
+    color: red;
+    padding: 12px;
+    font-size: 27px;
+  }
+  .clock section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+  }
+  .clock section p {
+    font-size: 1.5rem;
+  }
+  .clock section small {
+    color: rgb(19, 17, 17);
+    text-shadow: none;
+  }
+  
+  
