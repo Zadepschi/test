@@ -2,11 +2,11 @@ body {
   background-color: #f3f6fc;
 }
 .container1 {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 30px;
-    margin: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 40px;
+  margin: 30px;
 }
 
 
@@ -15,8 +15,7 @@ nav {
   justify-content: center;
   padding: 15px;
   background-color: rgb(226, 227, 228, 0.4);
-  width: 98%;
-  position: absolute;
+
  
 }
 .link {
@@ -31,8 +30,8 @@ nav {
 
 .slidePicture {
   width: 100%;
-  
 }
+
 .main .center {
   position: absolute;
   top: 20%;
@@ -42,83 +41,89 @@ nav {
   text-transform: uppercase;
   z-index: 15;
   }
-  .main .center h1 {
-    color: black;
-    font-size: calc(16px + 1.2vw);
-    font-weight: 700;
-    margin-bottom: 30px;
-    position: relative;
-    animation: showLeft 2s;
-    z-index: 1;
-    font-family: 'Open Sans', sans-serif;
-    text-shadow: 5px 5px 10px white;
-    }
+.main .center h1 {
+  color: black;
+  font-size: calc(16px + 1.2vw);
+  font-weight: 700;
+  margin-bottom: 30px;
+  position: relative;
+  animation: showLeft 2s;
+  z-index: 1;
+  font-family: 'Open Sans', sans-serif;
+  text-shadow: 5px 5px 10px white;
+  }
     
-    @keyframes showLeft {
-    from {left:-100%;}
-    to {left:0;}
-    }
+@keyframes showLeft {
+  from {left:-100%;}
+  to {left:0;}
+  }
     
    
     
-    .buttons .buttonContainer {
-      display: flex;
-      justify-content: space-between;
-      position: absolute;
-      top: 40%;
-      width: 100%;
-    }
-    .buttons .buttonContainer .prevButton {
-      margin-left: 5%;
-      position: relative;
-      animation: showLeft 1s;
-      z-index: 1;
-    }
-    @keyframes showLeft {
-      from {left:-100%;}
-      to {left:0;}
-      }
-      .buttons .buttonContainer .nextButton {
-        margin-right: 5%;
-        position: relative;
-        animation: showRight 1s;
-        z-index: 1;
-      }
-      @keyframes showRight {
-        from {right:-100%;}
-        to {right:0;}
-        }
-      .prevButton  {
-        background: transparent;
-        border: none;
-        box-shadow: 2px 2px 4px;
-      }
-      .nextButton {
-        background: transparent;
-        border: none;
-        box-shadow: 2px 2px 4px;
-      }
+.buttons .buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  }
+.buttons .buttonContainer .prevButton {
+  margin-left: 5%;
+  position: relative;
+  animation: showLeft 1s;
+  z-index: 1;
+  }
+@keyframes showLeft {
+  from {left:-100%;}
+  to {left:0;}
+  }
+.buttons .buttonContainer .nextButton {
+  margin-right: 5%;
+  position: relative;
+  animation: showRight 1s;
+  z-index: 1;
+  }
+@keyframes showRight {
+  from {right:-100%;}
+  to {right:0;}
+  }
+.prevButton  {
+  background: transparent;
+  border: none;
+  box-shadow: 2px 2px 4px;
+  }
+.nextButton {
+  background: transparent;
+  border: none;
+  box-shadow: 2px 2px 4px;
+  }
+  .prevImg {
+    width: 100px;
+  }
+  .nextImg {
+    width: 100px;
+  }
+.clothesName {
+  font-family: 'Open Sans', sans-serif;
+ 
+  width: 70%;
 
-      .clothesName {
-        font-family: 'Open Sans', sans-serif;
-        padding: 10px;
-      }
-      .clothesPrice {
-        font-family: 'Open Sans', sans-serif;
-        font-size: 20px;
-        padding: 10px;
-        margin: 5px;
-       
-      }
-.catalog {
-  margin-top: 20px;
-}
+  }
+.clothesPrice {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  padding: 10px;
+  margin: 5px;  
+  width: 70%; 
+  }
+
 .cont {
-  margin-top: 80px;
+
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   padding: 10px;
+  
   
 }
 .change {
@@ -127,4 +132,138 @@ nav {
   text-transform: uppercase;
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
+}
+.catalog {
+  width: 280px;
+  height: 410px;
+  margin: 20px;
+}
+
+.about {
+  display: flex;
+  
+}
+.description { 
+  margin: 20px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.aboutPicture {
+  height: 100vh;
+  width: 1100px;
+}
+.showMore {
+  font-family: 'Chivo', sans-serif;
+  font-size: 25px;
+  border: none;
+  background-color: rgb(248, 243, 238);
+  color: rgb(9, 155, 192);
+}
+
+@media all and (max-width: 1280px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutPicture {
+    height: 100% ;
+    width: 100%;
+  }
+  .slidePicture {
+    height: 100vh;
+  }
+}
+
+
+
+@media all and (max-width: 912px) {
+
+
+  nav {
+    padding: 5px;
+  }
+  .link {
+    padding: 7px 25px;
+    font-size: 16px;
+  }
+  .prevImg {
+    width: 80px;
+  }
+  .nextImg {
+    width: 80px;
+  }
+  .container1 {
+    padding: 20px;
+    margin: 15px;
+  }
+  .catalog {
+    width: 250px;
+    height: 380px;
+    margin: 18px;
+  }
+}
+
+
+
+
+@media all and (max-width: 540px)  {
+ 
+  .link {
+    padding: 7px 15px;
+    font-size: 14px;
+  }
+  .prevImg {
+    width: 50px;
+  }
+  .nextImg {
+    width: 50px;
+  }
+  .container1 {
+    padding: 15px;
+    margin: 10px;
+  }
+  .catalog {
+    width: 210px;
+    height: 320px;
+    margin: 7px;
+  }
+  .clothesName {
+   font-size: 15px;
+    }
+
+    .change {
+      padding: 6px;
+      margin: 6px;
+  font-size: 10px;
+    }
+    .description {
+      font-size: 20px;
+    }
+    .showMore {
+      font-size: 20px;
+    }
+}
+
+
+
+
+
+@media all and (max-width: 280px) {
+  .link {
+    padding: 7px 10px;
+    font-size: 12px;
+  }
+  .prevImg {
+    width: 40px;
+  }
+  .nextImg {
+    width: 40px;
+  }
+  .description {
+    font-size: 15px;
+  }
+  .showMore {
+    font-size: 15px;
+  }
 }

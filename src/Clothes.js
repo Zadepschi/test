@@ -9,7 +9,7 @@ function Clothes( {itemsForSale} ) {
      const {id, name, image, price } = element;
      return( <div>
         <div key={id} >
-            <img className='catalog' src={image} width="400px" height="600px" alt="pic" />
+            <img className='catalog' src={image}  alt="pic" />
             <div className='clothesName'>  <h2> {name} </h2>  </div>
              <div className='clothesPrice'><h2> $ {price}  </h2></div>
         </div>

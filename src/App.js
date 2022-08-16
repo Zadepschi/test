@@ -10,6 +10,7 @@ import './App.css';
 import Login from './Login';
 import Home from './Home';
 import ClockApp from './ClockApp';
+import About from './About';
 
 
 function App() {
@@ -23,11 +24,13 @@ function App() {
      <nav>
        <Link to="/" className="link">Home</Link>
        <Link to="/products" className="link">Products</Link>
+       <Link to="/about" className="link">About</Link>
        <Link to="/login" className="link">Login</Link>
      </nav>
      <Routes>
       <Route path="/"  element={<Home/>} />
       <Route path="/products" element={<Products/>} />
+      <Route path="/about" element={<About/>}/>
       <Route path="/login" element={<Login/>}/>
 
      </Routes>

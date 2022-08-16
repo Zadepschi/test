@@ -13,10 +13,16 @@ function Products() {
         const newClothes = data.filter(element => element.searchTerm === searchTerm);
         setItemsForSale(newClothes)
     }
+    
+    const allClothes = () => {
+         const allClothesButton = data.filter(element => element);
+         setItemsForSale(allClothesButton)
+    } 
+
 
     return ( <div>
 
-        <Buttons  filteredClothes={chosenClothes} />
+        <Buttons  filteredClothes={chosenClothes} anyword={allClothes} />
         <Clothes  itemsForSale={itemsForSale} />
 
         </div>)

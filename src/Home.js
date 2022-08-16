@@ -42,8 +42,8 @@ function Home() {
         </div>
         <div className="buttons">
             <div className="buttonContainer">
-              <button className="prevButton" onClick={previousButton}> {<img src={left} width="100px" alt="ok" />} </button>
-              <button className="nextButton" onClick={nextButton}> {<img src={next} width="100px" alt="ok" />} </button>
+              <button className="prevButton" onClick={previousButton}> {<img className="prevImg" src={left}  alt="ok" />} </button>
+              <button className="nextButton" onClick={nextButton}> {<img className="nextImg" src={next}  alt="ok" />} </button>
             </div>
         </div>
     </div>

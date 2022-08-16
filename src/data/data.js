@@ -17,7 +17,7 @@ export const data = [
    },
    { 
     id: 3 ,
-    name: "Plaid Classic Trousers" ,
+    name: "Plaid  Trousers" ,
     image: "https://images.unsplash.com/photo-1570653321427-0e4d0c40bb84?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDl8fHBhbnRzfGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=500&q=60" ,
     price: 120,
     searchTerm: "pants"
@@ -101,7 +101,7 @@ export const data = [
      },
      { 
      id: 15,
-     name: "Sandals with Fur Embellishment" ,
+     name: "Sandals with Fur" ,
      image: "https://images.unsplash.com/photo-1554238113-6d3dbed5cf55?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjB8fGhpZ2glMjBoZWVsc3xlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60" ,
      price: 180,
      searchTerm: "shoes"

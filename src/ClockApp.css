@@ -30,6 +30,7 @@
     color: red;
     padding: 12px;
     font-size: 27px;
+    font-family: 'Open Sans', sans-serif;
   }
   .clock section {
     display: flex;
@@ -39,11 +40,44 @@
     padding: 4px;
   }
   .clock section p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   .clock section small {
     color: rgb(19, 17, 17);
     text-shadow: none;
   }
   
-  
+  @media all and (max-width: 800px) {
+    .sale {
+      padding: 10px;
+      font-size: 20px;
+    }
+    .clock section p {
+      font-size: 0.8rem;
+    }
+  }
+
+  @media all and (max-width: 500px) {
+    .sale {
+      padding: 6px;
+      font-size: 18px;
+    }
+    .clock section p {
+      font-size: 0.9rem;
+    }
+    .clock section small {
+      font-size: 0.9rem;
+    }
+  }
+  @media all and (max-width: 320px) {
+    .sale {
+      padding: 6px;
+      font-size: 15px;
+    }
+    .clock section p {
+      font-size: 0.7rem;
+    }
+    .clock section small {
+      font-size: 0.7rem;
+    }
+  }
