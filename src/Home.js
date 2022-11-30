@@ -6,7 +6,7 @@ import next from "./next.png";
 
 function Home() {
   const [firstPage, setFirstPage] = useState(0);
-  const { id, image, name } = data[firstPage];
+  const { id, image, name, img } = data[firstPage];
 
   const previousButton = () => {
     setFirstPage((firstPage) => {
@@ -38,15 +38,16 @@ function Home() {
       <div>
         <img className="slidePicture" src={image} alt="clothes" />
       </div>
+      <div className="pngPicture">
+      <img className="slidePicture dress" src={img} alt="clothes" />
+      </div>
       <div className="buttons">
         <div className="buttonContainer">
           <button className="prevButton" onClick={previousButton}>
-            {" "}
-            {<img className="prevImg" src={left} alt="ok" />}{" "}
+            {<img className="prevImg" src={left} alt="ok" />}
           </button>
           <button className="nextButton" onClick={nextButton}>
-            {" "}
-            {<img className="nextImg" src={next} alt="ok" />}{" "}
+            {<img className="nextImg" src={next} alt="ok" />}
           </button>
         </div>
       </div>

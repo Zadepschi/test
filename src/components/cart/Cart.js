@@ -17,7 +17,7 @@ const Cart = () => {
   const [modalActive, setModalActive] = useState(false);
 
   return (
-    <div>
+    <div className="deleteAllDiv">
       <div onClick={() => setModalActive(true)} className="deleteAll">
         <img
           className="cartIcon"

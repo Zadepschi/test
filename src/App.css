@@ -273,6 +273,7 @@ cursor: pointer;
   background-color: rgba(116, 112, 112, 0.2);
   border-radius: 30px;
   padding: 5px;
+ 
 }
 .deleteSpan {
   font-size: 30px;
@@ -308,9 +309,15 @@ table, td, th {
   margin: 5px;
   width: 100vw;
 }
-
-
-
+.pngPicture {
+   display: flex;
+  justify-content: center;
+}
+.dress {
+ margin-top: 50px;
+  background-color: transparent;
+  width: 50vw;
+}
 
 
 
@@ -474,7 +481,7 @@ table, td, th {
   }
   a.link {
     font-size: 12px;
-    padding: 5px;
+    padding: 15px;
   }
   .deleteAll {
     margin-left: 40px;
@@ -505,9 +512,13 @@ table, td, th {
 }
 
 @media all and (max-width: 375px) {
+  .deleteAllDiv {
+display: flex;
+align-self: center;
+  }
   a.link {
     font-size: 10px;
-    padding: 4px;
+    padding: 13px;
   }
   
   .containerSmall {
@@ -544,6 +555,9 @@ table, td, th {
     width: 240px;
     height: 340px;
     padding: 20px;
+  }
+  a.link {
+    padding: 10px;
   }
  }
 
