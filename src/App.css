@@ -1,12 +1,31 @@
 body {
   background-color: #f3f6fc;
+  
 }
 .container1 {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding: 40px;
-  margin: 30px;
+  padding: 20px;
+ 
+}
+
+.containerSmall {
+  border-radius: 50px;
+   margin: 30px;
+  transform: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.containerSmall:hover {
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.6);
+  transform: translateY(-5px);
+}
+
+.clockFix {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 
@@ -14,10 +33,18 @@ nav {
   display: flex;
   justify-content: center;
   padding: 15px;
-  background-color: rgb(226, 227, 228, 0.4);
+  background-color: rgb(226, 227, 228, 0.8);
 
+  overflow: hidden;
+  position: fixed;
+  top: 46px;
+  width: 100%;
  
 }
+nav.link {
+  display: block;
+}
+
 .link {
   text-transform: uppercase;
   padding: 8px 50px;
@@ -27,28 +54,32 @@ nav {
   font-family: 'Open Sans', sans-serif;
   font-weight: bolder;
 }
+a.link {
+  align-self: center;
+}
 
 .slidePicture {
   width: 100%;
 }
 
 .main .center {
-  position: absolute;
+  position: relative;
+
   top: 20%;
   left: 0;
   right: 0;
   text-align: center;
   text-transform: uppercase;
-  z-index: 15;
+
   }
 .main .center h1 {
   color: black;
   font-size: calc(16px + 1.2vw);
   font-weight: 700;
   margin-bottom: 30px;
-  position: relative;
+  position: absolute;
   animation: showLeft 2s;
-  z-index: 1;
+margin-left: 50px;
   font-family: 'Open Sans', sans-serif;
   text-shadow: 5px 5px 10px white;
   }
@@ -103,18 +134,59 @@ nav {
   .nextImg {
     width: 100px;
   }
+
+.containerSmall {
+  display: flex;
+  flex-direction: column;
+}
+
+
 .clothesName {
   font-family: 'Open Sans', sans-serif;
- 
-  width: 70%;
+ align-self: center;
 
   }
+ 
 .clothesPrice {
   font-family: 'Open Sans', sans-serif;
   font-size: 15px;
-  padding: 10px;
+  padding: 5px;
   margin: 5px;  
-  width: 70%; 
+  align-self: center;
+  }
+  .minusPlus {
+    align-self: center ;
+  }
+  .minusPlusChild span {
+    font-size: 25px;
+  }
+  .minusPlusChild button  {
+padding: 7px;
+margin: 7px;
+font-size: 20px;
+font-weight: bolder;
+border-radius: 15px;
+color: white;
+background-color: rgb(131, 122, 122);
+cursor: pointer;
+  }
+
+  .addToCartButton  {
+     align-self: center;
+     margin-bottom: 8px;
+    
+  }
+  .addToCartButton button{ 
+    color: white;
+    background-color: rgb(131, 122, 122);
+    padding: 5px;
+    margin: 5px;
+    border-radius: 25px;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    cursor: pointer;
+   
   }
 
 .cont {
@@ -122,7 +194,7 @@ nav {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 10px;
+  padding: 5px;
   
   
 }
@@ -134,8 +206,8 @@ nav {
   font-weight: bold;
 }
 .catalog {
-  width: 280px;
-  height: 410px;
+  width: 220px;
+ padding: 10px;
   margin: 20px;
 }
 
@@ -150,7 +222,8 @@ nav {
 }
 
 .aboutPicture {
-  height: 100vh;
+  width: 70vw;
+
   
 }
 .showMore {
@@ -161,7 +234,100 @@ nav {
   color: rgb(9, 155, 192);
 }
 
+.cartIcon {
+  width: 30px;
+}
+.categoryButton {
+  border: 2px solid black;
+  padding: 5px;
+  margin: 5px;
+  cursor: pointer;
+  
+}
+.categoryButton:hover {
+  background-color: #efe9ef;
+}
+.categoryButtonSelected {
+color: white;
+background-color: rgb(46, 46, 48);
+border: 2px solid black;
+padding: 5px;
+margin: 5px;
+cursor: pointer;
+}
+.categoryButtonSelected:hover {
+  background-color: green;
+}
+
+.deleteIcon {
+  width: 50px;
+  cursor: pointer;
+}
+.deleteIcon:hover {
+  width: 60px;
+}
+
+.deleteAll {
+  margin-left: 250px;
+  cursor: pointer;
+  background-color: rgba(116, 112, 112, 0.2);
+  border-radius: 30px;
+  padding: 5px;
+}
+.deleteSpan {
+  font-size: 30px;
+  padding: 10px;
+}
+.trashIcon {
+  width: 70px;
+  cursor: pointer;
+}
+.trashIcon:hover {
+  width: 80px;
+}
+
+.modalCart {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.totalRow {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  margin: 15px;
+  align-items: center;
+}
+.totalRow p {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+table, td, th {
+  padding: 10px;
+  margin: 5px;
+  width: 100vw;
+}
+
+
+
+
+
+
+
+
 @media all and (max-width: 1280px) {
+  .container1 {
+    padding: 5px;
+  }
+  .change {
+    padding: 5px;
+    margin: 5px;
+     }
+  .deleteAll {
+    margin-left: 80px;
+   }
+
   .about {
     display: flex;
     flex-direction: column;
@@ -170,16 +336,23 @@ nav {
     height: 100% ;
     width: 100%;
   }
-  .slidePicture {
-    height: 100vh;
-  }
+ 
+
 }
 
 
 
+
+
 @media all and (max-width: 912px) {
-
-
+  .change {
+    padding: 2px;
+    margin: 2px;
+     }
+.cont {
+  padding: 2px;
+}
+  
   nav {
     padding: 5px;
   }
@@ -204,11 +377,51 @@ nav {
   }
 }
 
+@media all and (max-width: 768px)  {
+  .container1 {
+    margin: 8px;
+    padding: 8px ;
+  }
+  .containerSmall {
+    margin: 15px;
+  }
+  p.categoryButton {
+    font-size: 20px;
+  }
+ .deleteAll {
+  margin-left: 60px;
+ }
+ .deleteSpan {
+  font-size: 20px ;
+ }
+}
 
-
+@media all and (max-width: 600px) {
+  p.categoryButton {
+    font-size: 15px;
+  }
+  .container1 {
+    margin: 3px;
+    padding: 1px;
+  }
+  .catalog {
+    width: 200px;
+    height: 300px;
+  }
+}
 
 @media all and (max-width: 540px)  {
- 
+  .containerSmall {
+    margin: 5px;
+    width: 250px;
+  }
+  .catalog {
+    width: 190px;
+    height: 280px;
+    margin: 10px;
+    padding: 25px;
+  }
+
   .link {
     padding: 7px 15px;
     font-size: 14px;
@@ -219,23 +432,23 @@ nav {
   .nextImg {
     width: 50px;
   }
-  .container1 {
-    padding: 15px;
-    margin: 10px;
-  }
+
   .catalog {
-    width: 210px;
-    height: 320px;
-    margin: 7px;
+    width: 175px;
+    height: 260px;
+    
   }
   .clothesName {
    font-size: 15px;
     }
-
+  .categoryButton {
+    margin: 3px;
+    padding: 3px;
+  }
     .change {
-      padding: 6px;
-      margin: 6px;
-  font-size: 10px;
+      padding: 1px;
+      margin: 1px;
+  font-size: 7px;
     }
     .description {
       font-size: 20px;
@@ -246,10 +459,111 @@ nav {
 }
 
 
+@media all and (max-width: 414px) {
+ .container1 {
+  margin: 1px;
+ }
+  .containerSmall {
+    margin: 1px;
+    width: 200px;
+  }
+  .catalog {
+    width: 165px;
+    height: 250px;
+    padding: 20px;
+  }
+  a.link {
+    font-size: 12px;
+    padding: 5px;
+  }
+  .deleteAll {
+    margin-left: 40px;
+    padding: 2px;
+  }
+  .cartIcon {
+    width: 20px;
+  }
+  .catalog {
+  
+    width: 140px;
+    height: 180px;
+  }
+}
 
+@media all and (max-width: 393px)  {
+  .containerSmall {
+  
+    width: 190px;
+  }
+  .catalog {
+   
+    padding: 15px;
+  }
+  h2 {
+    font-size: 17px;
+  }
+}
 
+@media all and (max-width: 375px) {
+  a.link {
+    font-size: 10px;
+    padding: 4px;
+  }
+  
+  .containerSmall {
+    margin: 1px;
+    width: 170px;
+  }
+  .catalog {
+    width: 130px;
+    height: 200px;
+    padding: 8px;
+  }
+ }
+
+ @media all and (max-width: 360px) {
+  .containerSmall {
+    margin: 1px;
+    width: 320px;
+  }
+  .catalog {
+    width: 240px;
+    height: 360px;
+    padding: 30px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+ }
+ @media all and (max-width: 320px) {
+  .containerSmall {
+    
+    width: 300px;
+  }
+  .catalog {
+    width: 240px;
+    height: 340px;
+    padding: 20px;
+  }
+ }
 
 @media all and (max-width: 280px) {
+  .containerSmall {
+    margin: 1px;
+    width: 270px;
+  }
+  .catalog {
+    width: 190px;
+    height: 255px;
+    padding: 30px;
+  }
+  p.categoryButton {
+    font-size: 10px;
+  }
+  .deleteAll {
+    margin-left: 20px;
+ 
+  }
   .link {
     padding: 7px 10px;
     font-size: 12px;

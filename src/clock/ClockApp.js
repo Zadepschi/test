@@ -11,7 +11,7 @@ function App() {
   let interval;
 
   const startTimer = () => {
-    const countDownDate = new Date("September 30,2022 ").getTime();
+    const countDownDate = new Date("June 30,2023 ").getTime();
 
     interval = setInterval(() => {
       const now = new Date().getTime();
@@ -46,13 +46,13 @@ function App() {
   return (
     <div className="App">
       <div className="line">
-       <h2 className="sale">BIG SALE </h2>
-      <Clock
-        timerDays={timerDays}
-        timerHours={timerHours}
-        timerMinutes={timerMinutes}
-        timerSeconds={timerSeconds}
-      />
+        <h2 className="sale">BIG SALE </h2>
+        <Clock
+          timerDays={timerDays}
+          timerHours={timerHours}
+          timerMinutes={timerMinutes}
+          timerSeconds={timerSeconds}
+        />
       </div>
     </div>
   );

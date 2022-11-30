@@ -1,8 +1,8 @@
-import React from 'react';
-import './Login.css';
+import React from "react";
+import "./Login.css";
 
 export default function Login() {
-  return(
+  return (
     <div className="login-wrapper">
       <h1>Please Log In</h1>
       <form>
@@ -15,9 +15,11 @@ export default function Login() {
           <input type="password" />
         </label>
         <div>
-          <button  className='btn' type="submit">Submit</button>
+          <button className="btn" type="submit">
+            Submit
+          </button>
         </div>
       </form>
     </div>
-  )
+  );
 }
