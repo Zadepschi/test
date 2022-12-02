@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import ok from './ok.png';
 
 const BackToTopButton = () => {
   const [backToTopButton, setBackToTopBautton] = useState(false);
@@ -24,7 +25,7 @@ const BackToTopButton = () => {
     <div>
       {backToTopButton && (
         <img
-          src="https://cdn.icon-icons.com/icons2/2020/PNG/512/arrow_cloud_up_upload_icon_123722.png"
+          src={ok}
           onClick={scrollUp}
           style={{
             position: "fixed",
